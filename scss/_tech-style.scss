@@ -1,0 +1,63 @@
+//    Загальний шрифт підключення
+// додати при підключенні через плагін &display=swap
+body {
+  font-family: "Neue Machina";
+  color: #FFF;
+  background-color: #020202;
+}
+//   Ограничивающий контейнер
+[class*="__container-s"]{
+  max-width: 1120px;
+  margin: 0 auto;
+  padding: 0 15px;
+}
+
+[class*="__container-l"]{
+  max-width: 1270px;
+  margin: 0 auto;
+  padding: 0 15px;
+}
+//                            
+//   Общая оболочка, нижний футер
+.wrapper {
+  overflow: hidden;
+  display: flex;
+  flex-direction: column;
+  min-height: 100%; //обязательно ибо футер не спустится
+}
+
+main {
+  flex: 1 1 auto;
+}
+
+.main {
+
+  // .main__top
+  &__top {
+    padding: 44px 0 56px 0;
+    @media (min-width: 767px){
+      padding: 108px 0 146px 0;
+    }
+  }
+
+    // .main__words
+    &__words {
+  }
+
+  &__articles {
+    padding: 60px 0 132px 0;
+    @media (min-width: 767px) {
+      padding: 150px 0 232px 0;
+    }
+  }
+
+  &__about {
+  
+  }
+
+  &__time {
+    padding: 184px 0 120px 0;
+  }
+}
+//                                  
+//                                  
